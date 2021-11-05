@@ -83,6 +83,12 @@
   margin-left: 10px;
 }
 
+.icons-wrapper .round-button .giph{
+  font-family: 'Amatic SC', cursive;
+  font-size: 22px;
+  font-weight: 70;
+}
+
 .search-bar{
   float: right;
 }
