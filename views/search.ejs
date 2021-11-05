@@ -3,7 +3,50 @@
     <%- include("./partials/head") %>
     <link rel='stylesheet' href='/stylesheets/style.css' />
 
-    <%- include("./partials/header") %> 
+    <header>    
+
+        <section class="icons-wrapper">
+            
+            <div class="left">
+                <h1 class="menu">MARIA</h1>
+
+                <div class="round-button">
+                    <div class="icon"><a href="/"><i class="fas fa-home"></i></a></div>
+                        <span>Home</span>            
+                </div>
 
 
+                <div class="round-button">
+                    <div class="icon"><a href="https://www.linkedin.com/in/mariabizari/"><i class="fab fa-linkedin-in"></i></a></div>
+                        <span>LinkedIn</span>            
+                </div>
+
+                <div class="round-button">
+                    <div class="icon"><a href="https://github.com/msbizari"><i class="fab fa-github"></i></a></div>
+                        <span>GitHub</span>            
+                </div>
+
+                <div class="round-button">
+                    <div class="icon"><a href="https://twitter.com/mbizari_"><i class="fab fa-twitter"></i></a></div>
+                        <span>Twitter</span>            
+                </div>  
+            </div>
+
+            <div class="search-bar">
+                    <input id="input" type="text" value=""/>
+                    <button id="btnSearch" type="submit" class="search-button" >Giphy!</button>
+            </div> 
+
+        </section>
+
+    </header>
+
+    <figure class="result">
+        <!-- <ul class="result-list">
+
+        </ul> -->
+    </figure>
+
+
+    <script src="javascripts/search.js"></script>
 </html>
