@@ -9,6 +9,6 @@ router.get('/', function(req, res, next) {
 });
 
 router.get('/more', maincontroller.more);
-
+router.get('/search', maincontroller.search);
 
 module.exports = router;

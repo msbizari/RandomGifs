@@ -17,17 +17,19 @@
 }
 
 .icons-wrapper {
-  align-content: center;
   align-items: center;
-  justify-content: left;
   text-align: left;
+  display: flex;
+  padding-bottom: 25px;
 }
 
-.search-bar{
-  justify-content: right;
-  text-align: right;
-
+.left{
+  align-items: center;
+  text-align: left;
+  flex: auto;
+  flex-wrap: nowrap;
 }
+
 
 .icons-wrapper .round-button{
   display: inline-block;
@@ -71,6 +73,38 @@
   margin-left: 10px;
 }
 
+.search-bar{
+  float: right;
+}
+
+.search-bar input{
+  background-color: transparent;
+  border: 0.5px solid rgba(255, 255, 255, 0.35);
+  border-radius: 100em;
+  color: rgba(255, 255, 255, 0.35);
+  width: 185px;
+  padding-left: 15px;
+}
+
+.search-bar form{
+  display: inline-block;
+  margin-top: 0;
+}
+
+.search-button{
+  background-color: transparent;
+  border: 0.5px solid rgba(255, 255, 255, 0.35);
+  color: #fff;
+  border-radius: 100em;
+  padding: 1px 15px;
+  text-decoration: none;
+  }
+
+.search-bar a{
+    text-decoration: none;
+    color: #fff;
+  }
+
 .title{
   margin: 0 0 1% 0;
 }
@@ -105,6 +139,7 @@ body{
 
 header{
   text-align: center;
+  margin-top: 0;
 }
 
 
@@ -131,7 +166,7 @@ figure ul li img {
   width: 300px;
 }
 
-button {
+.buttons {
   align-content: space-around;
   margin: 0% 0.75% 3% 0.75%;
   background-color: transparent;
@@ -164,4 +199,29 @@ button {
    main section {
        display: block;
    }
+
+   header .icons-wrapper{
+     flex-wrap: wrap;
+     justify-content: center;
+   }
+
+   header .left{
+     align-content: center;
+     align-items: center;
+     justify-content: center;
+     text-align: center;
+   }
 }
+
+@media (min-width: 580px){
+
+  header .left{
+    justify-content: left;
+    text-align: left;
+  }
+
+  .search-bar{
+    margin-top: 25px;
+  }
+}
+
