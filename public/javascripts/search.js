@@ -1,9 +1,9 @@
-let searchButton = document.querySelector('.search-button');
-searchButton.onclick = function searchGif() {
+function searchGif(){
+    document.querySelector("figure").innerHTML = " ";
+
     var userInput = document.querySelector("#input").value;
-    console.log(userInput);    
-    
-    fetch(`https://api.giphy.com/v1/gifs/search?api_key=Jw8tqc0vadsvURd2SkDkVHqcDMnboKhv&q=${userInput}&limit=10&offset=10&rating=g&lang=en`)
+    console.log(userInput);
+    fetch(`https://api.giphy.com/v1/gifs/search?api_key=Jw8tqc0vadsvURd2SkDkVHqcDMnboKhv&q=${userInput}&limit=20&offset=10&rating=g&lang=en`)
     .then(function(response){
         return response.json();
     })
@@ -17,3 +17,6 @@ searchButton.onclick = function searchGif() {
         }
     })
 }
+
+let searchButton = document.querySelector('.search-button');
+searchButton.addEventListener("click", searchGif);

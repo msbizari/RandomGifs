@@ -9,7 +9,7 @@ window.onload = function() {
             for (let i = 0; i < info.data.length; i++){
             let gif = "<img src= " + info.data[i].images.original.url + ">";
             gif += "<p>" +  info.data[i].title + "</p>";
-            document.querySelector("ul").innerHTML += "<li>" + gif + "</li>";
+            document.querySelector("figure").innerHTML += "<div>" + gif + "</div>";
             }            
         })
     }

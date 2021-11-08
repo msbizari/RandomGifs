@@ -39,7 +39,7 @@
             </div>
 
             <div class="search-bar">
-                    <input id="input" type="text" value=""/>
+                    <input id="input" type="text" value="" onfocus="this.value=''"/>
                     <button id="btnSearch" type="submit" class="search-button" >Giphy!</button>
             </div> 
 
@@ -47,7 +47,9 @@
 
     </header>
 
-    <figure class="result">
+    <figure>
+
+        <h3>Let's search for your fav Gifs!</h3>
         <!-- <ul >
             
             Here the magic happens
@@ -58,3 +60,6 @@
 
     <script src="javascripts/search.js"></script>
 </html>
+
+
+<!-- onfocus="this.value=''" -->

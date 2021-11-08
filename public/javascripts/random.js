@@ -1,5 +1,5 @@
 window.onload = function() {
-    this.fetch("https://api.giphy.com/v1/gifs/trending?api_key=Jw8tqc0vadsvURd2SkDkVHqcDMnboKhv&limit=30&rating=g")
+    this.fetch("https://api.giphy.com/v1/gifs/trending?api_key=Jw8tqc0vadsvURd2SkDkVHqcDMnboKhv&limit=60&rating=g")
         .then(function(response){
             return response.json();
 
@@ -11,30 +11,22 @@ window.onload = function() {
             function randomGif(arrGif){
                 return arrGif[Math.floor(Math.random()*arrGif.length)];
             }
-            let randomIndix = randomGif(arrGif);
+            function randomButton(){
+                let randomIndix = randomGif(arrGif);
+                console.log(randomIndix);
+                let gif = "<img src= " + randomIndix.images.original.url + ">";
+                gif += "<p>" + randomIndix.title + "</p>";
+                document.querySelector("figure").innerHTML += "<div>" + gif + "</div>";
+            }
 
-            // for (let i = 0; i < arrGif.length; i++){
-            let gif = "<img src= " + randomIndix.images.original.url + ">";
-            gif += "<p>" + randomIndix.title + "</p>";
-            document.querySelector("ul").innerHTML += "<li>" + gif + "</li>";
+            randomButton();
 
             let sorprisemeButton = document.querySelector(".wow");
             sorprisemeButton.addEventListener("click", function(){
-                window.location.reload(true);
-                // e.preventDefault();
-                // console.log(this);
-                // gif = "<img src= " + (randomIndix + 1).images.original.url + ">";
-                // gif += "<p>" + (randomIndix + 1).title + "</p>";
-                // document.querySelector("ul").innerHTML += "<li>" + gif + "</li>";
-                // alert('Hiciste Click!');
+                document.querySelector("figure").innerHTML = " ";
+                randomButton();
+                // window.location.reload(true);
             })
-                
-
-    
-        // })
-        // .catch (function(e){
-        //     alert("Error! Intente mas tarde");
-        // })    
        })
     }  
 
