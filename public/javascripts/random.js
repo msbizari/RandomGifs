@@ -11,6 +11,7 @@ window.onload = function() {
             function randomGif(arrGif){
                 return arrGif[Math.floor(Math.random()*arrGif.length)];
             }
+
             function randomButton(){
                 let randomIndix = randomGif(arrGif);
                 console.log(randomIndix);
