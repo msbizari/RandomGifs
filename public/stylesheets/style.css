@@ -141,7 +141,7 @@ figure {
 
 figure div {
   flex-grow: 1;
-  flex-basis: 180px;
+  flex-basis: 200px;
   margin: 20px;
   font-size: 11px;
   color: rgba(255, 255, 255, 0.75);
@@ -150,8 +150,22 @@ figure div {
 
 figure div img{
   border-radius: 1em;
-  width: 180px;
-  height: 180px;
+  width: 300px;
+  height: 300px;
+}
+
+main{
+  margin: 20px;
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+main div img {
+  border-radius: 1em;
+  width: 500px;
+  height: 500px;
+
+
 }
 
 /* ul .result-list {
@@ -211,7 +225,7 @@ figure {
   /* margin: 0 5% 0 2%; */
 }
 
-figure ul li {
+/* figure ul li {
   margin: 0% 0% 3% 0%;
   list-style-type: none;
   font-size: 11px;
@@ -222,7 +236,7 @@ figure ul li {
 figure ul li img {
   border-radius: 1em;
   width: 300px;
-}
+} */
 
 .buttons {
   align-content: space-around;

@@ -16,14 +16,14 @@ window.onload = function() {
                 console.log(randomIndix);
                 let gif = "<img src= " + randomIndix.images.original.url + ">";
                 gif += "<p>" + randomIndix.title + "</p>";
-                document.querySelector("figure").innerHTML += "<div>" + gif + "</div>";
+                document.querySelector("main").innerHTML += '<div class="index-img">' + gif + "</div>";
             }
 
             randomButton();
 
             let sorprisemeButton = document.querySelector(".wow");
             sorprisemeButton.addEventListener("click", function(){
-                document.querySelector("figure").innerHTML = " ";
+                document.querySelector("main").innerHTML = " ";
                 randomButton();
                 // window.location.reload(true);
             })
