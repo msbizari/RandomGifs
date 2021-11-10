@@ -29,7 +29,7 @@
   align-items: center;
   text-align: left;
   display: flex;
-  padding-bottom: 25px;
+  /* padding-bottom: 25px; */
   margin-right: 30px;
 }
 
@@ -100,6 +100,7 @@
   color: #fff;
   width: 185px;
   padding-left: 15px;
+  outline: none;
 }
 
 .search-bar form{
@@ -119,19 +120,20 @@
   text-decoration: none;
   font-family: 'Amatic SC', cursive;
   font-size: 25px;
+  outline: none;
+  cursor: pointer;
   }
 
-  .search-button a{
-    text-decoration: none;
-    font-family: 'Amatic SC', cursive;
-    font-size: 25px;
-    }
-  
+.search-button a{
+  text-decoration: none;
+  font-family: 'Amatic SC', cursive;
+  font-size: 25px;
+}
 
 .search-bar a{
-    text-decoration: none;
-    color: #fff;
-  }
+  text-decoration: none;
+  color: #fff;
+}
 
 figure {
   display: flex;
@@ -141,8 +143,8 @@ figure {
 
 figure div {
   flex-grow: 1;
-  flex-basis: 250px;
-  margin: 20px;
+  flex-basis: 50px;
+  margin: 5px;
   font-size: 11px;
   color: rgba(255, 255, 255, 0.75);
 
@@ -155,7 +157,6 @@ figure div img{
 }
 
 main{
-  margin: 20px;
   font-size: 11px;
   color: rgba(255, 255, 255, 0.75);
 }
@@ -164,21 +165,6 @@ main div img {
   border-radius: 1em;
   width: 350px;
   height: 350px;
-
-
-}
-
-/* ul .result-list {
-  display:flex;
-  flex-wrap: wrap;
-}
-
-ul .result-list li{
-  flex-wrap: wrap;
-} */
-
-.title{
-  margin: 0 0 1% 0;
 }
 
 body{
@@ -214,29 +200,18 @@ header{
   margin-top: 0;
 }
 
-
 h1{
   font-weight: 200;
 }
-
 
 figure {
   text-align: center;
   /* margin: 0 5% 0 2%; */
 }
 
-/* figure ul li {
-  margin: 0% 0% 3% 0%;
-  list-style-type: none;
-  font-size: 11px;
-  color: rgba(255, 255, 255, 0.75);
-
+section {
+  margin-top: 15px;
 }
-
-figure ul li img {
-  border-radius: 1em;
-  width: 300px;
-} */
 
 .buttons {
   align-content: space-around;
@@ -249,6 +224,41 @@ figure ul li img {
   cursor: pointer;
   font-size: 16px;
   font-weight: 250;
+}
+
+.home-button{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  height: 65px;
+  width: 65px;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  justify-content: center;
+  align-content: center;
+}
+
+.home-button i{
+  text-decoration: none;
+  color: #fff;
+  font-size: 40px; 
+  margin-top: 10px;
+}
+
+footer{
+  margin-top: 25px;
+}
+.footer-sign{
+  display: inline;
+  position: static;
+  bottom: 10px;
+  text-align: center;
+  font-size: 15px;
+}
+
+.footer-sign img{
+  height: 15px;
 }
 
 @keyframes change {

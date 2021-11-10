@@ -20,3 +20,7 @@ function searchGif(){
 
 let searchButton = document.querySelector('.search-button');
 searchButton.addEventListener("click", searchGif);
+// let input = document.querySelector("#input");
+// input.addEventListener("focusout", function(){
+//     searchButton.innerHTML = "Done!"
+// })
